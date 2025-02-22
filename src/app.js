@@ -32,14 +32,15 @@ app.use(compression({
 
 
 // Init DB
-// Connect to database here
+require('./dbs/init.mongodb');
+
 
 // Init routes
 app.get('/', (req, res, next) => {
-    const strCompress='hello dep trai';
+    //const strCompress='hello dep trai';
     res.status(200).json({ 
         message: 'Hello World!' ,
-        metadata:strCompress.repeat(100000)
+       // metadata:strCompress.repeat(100000)
     });
 });
 
