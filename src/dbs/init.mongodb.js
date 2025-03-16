@@ -1,7 +1,9 @@
 'use strict';
 const mongoose = require('mongoose');
-require('dotenv').config();
-const { countConnect, checkOverload  } = require('../helpers/check.connect');
+const { countConnect, checkOverload } = require('../helpers/check.connect');
+const { db: { host, name, port } } = require('../configs/config.mongodb');
+
+const connectString = `mongodb://${host}:${port}/${name}`;
 
 class Database {
     constructor() {
@@ -9,21 +11,19 @@ class Database {
     }
 
     _connect() {
-        const connectString = process.env.MONGO_URI;
-
         if (!connectString) {
             console.error('[ERROR] MongoDB connection string is missing!');
             process.exit(1);
         }
 
         mongoose.connect(connectString, {
-            maxPoolSize:50,
+            maxPoolSize: 50,
             serverSelectionTimeoutMS: 5000, // Timeout after 5 seconds if no response
         })
             .then(() => {
-                console.log('[INFO] ✅ Connected to MongoDB successfully PRO');
+                console.log('[INFO] ✅ Connected to MongoDB successfully');
                 countConnect(); // ✅ Call countConnect() separately
-                checkOverload(); // Start monitoring overload
+                //checkOverload(); // Start monitoring overload
             })
             .catch(err => {
                 console.error('[ERROR] ❌ MongoDB connection error:', err);
@@ -42,15 +42,22 @@ class Database {
         });
 
         // Enable debug mode in development
-        if (process.env.NODE_ENV === 'development') {
-            mongoose.set('debug', { color: true });
+        if (process.env.NODE_ENV === 'dev') {
+            mongoose.set('debug', true);
         }
     }
 
-    _reconnect() {
+    _reconnect(attempts = 5) {
+        if (attempts <= 0) {
+            console.error('[ERROR] ❌ Maximum reconnection attempts reached. Exiting...');
+            process.exit(1);
+        }
+
         setTimeout(() => {
-            console.log('[INFO] 🔄 Reconnecting to MongoDB...');
-            this._connect();
+            console.log(`[INFO] 🔄 Reconnecting to MongoDB... (${5 - attempts + 1}/5)`);
+            mongoose.connect(connectString)
+                .then(() => console.log('[INFO] ✅ Reconnected to MongoDB successfully'))
+                .catch(() => this._reconnect(attempts - 1));
         }, 5000); // Wait 5 seconds before retrying
     }
 

@@ -1,0 +1,44 @@
+@url_dev = http://localhost:3055/v1/api/shop
+@auth_token = Bearer YOUR_JWT_TOKEN  # Replace with your actual token
+
+### 1️⃣ GET - Fetch All Shops
+GET {{url_dev}}
+
+### 2️⃣ GET - Fetch a Shop by ID
+GET {{url_dev}}/12345
+
+### 3️⃣ POST - Create a New Shop (Sign Up)
+POST {{url_dev}}/signup
+Content-Type: application/json
+
+{
+    "name": "My Shop3",
+    "email": "shop@example3.com",
+    "password": "securepassword"
+}
+
+### 4️⃣ PUT - Update Entire Shop Information
+PUT {{url_dev}}/12345
+Content-Type: application/json
+
+{
+    "name": "Updated Shop Name",
+    "email": "new-email@example.com",
+    "password": "newpassword"
+}
+
+### 5️⃣ PATCH - Partially Update a Shop
+PATCH {{url_dev}}/12345
+Content-Type: application/json
+
+{
+    "name": "Partially Updated Shop"
+}
+
+### 6️⃣ DELETE - Remove a Shop
+DELETE {{url_dev}}/12345
+
+### 7️⃣ Authenticated Request (Example)
+GET {{url_dev}}/12345
+Authorization: {{auth_token}}
+
