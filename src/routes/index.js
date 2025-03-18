@@ -1,14 +1,17 @@
 'use strict';
 const express = require('express');
+const { apiKey, permission } = require('../auth/checkAuth');
 const router = express.Router();
 
 
+//check apiKey
+router.use(apiKey)
+
+
+//check permission
+router.use(permission('0000')) // 1111 is denied
+
+
 router.use('/v1/api',require('./access'))
-// Define routes using `router`
-// router.get('', (req, res) => {
-//     res.status(200).json({
-//         message: 'Hello World!',
-//     });
-// })
 
 module.exports = router;

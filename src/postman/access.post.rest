@@ -9,11 +9,12 @@ GET {{url_dev}}/12345
 
 ### 3️⃣ POST - Create a New Shop (Sign Up)
 POST {{url_dev}}/signup
+x-api-key: 64b0120ef3f1736952010a9804538b88fdf58ccff1a67fd42c98e8f50a768827e1ff5831ac44f71c1159c42cf8271089f07a18dd03f78da814f1e1388a42e7af
 Content-Type: application/json
 
 {
-    "name": "My Shop3",
-    "email": "shop@example3.com",
+    "name": "My Shop4",
+    "email": "shop@example15.com",
     "password": "securepassword"
 }
 
