@@ -21,7 +21,6 @@ const apiKeySchema = new Schema(
             required: true,
             enum: ['0000', '1111', '2222']
         },
-
     },
     {
         timestamps: true,

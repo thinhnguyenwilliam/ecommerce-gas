@@ -6,6 +6,7 @@ const shopModel = require('../models/shop.model');
 const KeyTokenService = require('./keyToken.service');
 const { createTokensPair } = require('../auth/authUtils');
 const { getInfoData } = require('../utils');
+const { BadRequestError } = require('../core/error.response');
 
 const RoleShop = {
     SHOP: 'SHOP',
@@ -16,15 +17,10 @@ const RoleShop = {
 
 class AccessService {
     static signUp = async ({ name, email, password }) => {
-        try {
-            // Check if shop already exists
+        
             const existingShop = await shopModel.findOne({ email }).lean();
             if (existingShop) {
-                return {
-                    code: 409, // HTTP Conflict
-                    message: 'Shop already registered',
-                    status: 'error'
-                };
+                throw new BadRequestError('Error: shop already exists');
             }
 
             // Hash the password before storing it
@@ -47,25 +43,9 @@ class AccessService {
             }
 
             if (newShop) {
-                // Generate public-private key pair
-
-                //--
-                // const { publicKey, privateKey } = crypto.generateKeyPairSync('rsa', {
-                //     modulusLength: 2048,
-                //     publicKeyEncoding: { type: 'spki', format: 'pem' },
-                //     privateKeyEncoding: { type: 'pkcs8', format: 'pem' }
-                // });
-
-                //console.log('Generated Keys for Shop:', newShop._id);
-                //console.log('Public Key:', publicKey);
-                //console.log('Private Key:', privateKey);
-                //--
 
                 const publicKey = crypto.randomBytes(64).toString('hex');
                 const privateKey = crypto.randomBytes(64).toString('hex');
-
-                //console.log('Public Key:', publicKey);
-                //console.log('Private Key:', privateKey);
 
                 const keyStore = await KeyTokenService.createKeyToken({
                     userId: newShop._id,
@@ -74,11 +54,7 @@ class AccessService {
                 });
 
                 if (!keyStore) {  // Check the correct variable
-                    return {
-                        code: 'xxxx',
-                        message: 'keyStore error',
-                        status: 'error'
-                    };
+                    throw new BadRequestError('Error: Key store error');
                 }
 
                 // create token pair
@@ -107,18 +83,7 @@ class AccessService {
                         tokens
                     }
                 };
-
             }
-
-        } catch (error) {
-            //console.error('Error in signUp:', error);
-            return {
-                code: 500,
-                message: 'An error occurred while registering the shop',
-                error: error.message,
-                status: 'error'
-            };
-        }
     };
 }
 

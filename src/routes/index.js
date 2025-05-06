@@ -7,7 +7,6 @@ const router = express.Router();
 //check apiKey
 router.use(apiKey)
 
-
 //check permission
 router.use(permission('0000')) // 1111 is denied
 

@@ -17,7 +17,7 @@ const shopSchema = new Schema(
             unique: true,
             required: true,  // Ensures email is mandatory
             trim: true,
-            lowercase: true  // Normalizes email to avoid duplicates due to case sensitivity
+            lowercase: true
         },
         password: {
             type: String,
@@ -29,11 +29,11 @@ const shopSchema = new Schema(
             default: 'inactive'
         },
         verify: {
-            type: Boolean, // `Schema.Types.Boolean` is unnecessary
+            type: Boolean,
             default: false
         },
         roles: {
-            type: [String], // Ensures it's an array of strings
+            type: [String],
             default: []
         }
     },
