@@ -52,7 +52,6 @@ class AccessService {
     }
 
 
-
     static signUp = async ({ name, email, password }) => {
 
         const existingShop = await shopModel.findOne({ email }).lean();

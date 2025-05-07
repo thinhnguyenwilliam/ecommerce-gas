@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const app = express();
 const helmet = require('helmet');
 const compression = require('compression');
+const cors = require('cors');
 const routes = require('./routes');
 const fs = require('fs');
 const path = require('path');
@@ -11,6 +12,16 @@ const path = require('path');
 app.use(express.json()); // Example middleware
 app.use(express.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(morgan('dev')); // Use Morgan for logging HTTP requests, 'dev' format for concise logs
+app.use(cors({
+    origin: [
+        'http://your-frontend-domain.com',
+        'http://your-frontend-domain2.com',
+
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
+}));
+
 
 app.use(helmet());
 // app.use(helmet({
