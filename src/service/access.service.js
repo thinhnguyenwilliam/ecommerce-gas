@@ -1,12 +1,12 @@
 'use strict';
 
 const bcrypt = require('bcryptjs');
-const crypto = require('crypto');
 const shopModel = require('../models/shop.model');
 const KeyTokenService = require('./keyToken.service');
 const { createTokensPair } = require('../auth/authUtils');
-const { getInfoData } = require('../utils');
-const { BadRequestError } = require('../core/error.response');
+const { getInfoData, generateKeyPair } = require('../utils');
+const { BadRequestError, AuthFailureError } = require('../core/error.response');
+const { findByEmail } = require('./shop.service');
 
 const RoleShop = {
     SHOP: 'SHOP',
@@ -16,6 +16,43 @@ const RoleShop = {
 };
 
 class AccessService {
+    static login = async ({ email, password, refreshToken = null }) => {
+        const foundShop = await findByEmail({ email });
+        if (!foundShop) {
+            throw new BadRequestError('Shop not found');
+        }
+        // Check if the password is correct
+        const isPasswordValid = await bcrypt.compare(password, foundShop.password);
+        if (!isPasswordValid) {
+            throw new AuthFailureError('Authentication failed password wrong');
+        }
+        const { publicKey, privateKey } = generateKeyPair();
+
+        const { _id: userId } = foundShop;
+        const tokens = await createTokensPair(
+            { userId, email },
+            publicKey,
+            privateKey
+        );
+
+        await KeyTokenService.createKeyToken({
+            publicKey,
+            privateKey,
+            refreshToken: tokens.refreshToken,
+            userId
+        });
+
+        return {
+            shop: getInfoData({
+                fields: ['_id', 'name', 'email'],
+                object: foundShop
+            }),
+            tokens
+        };
+    }
+
+
+
     static signUp = async ({ name, email, password }) => {
 
         const existingShop = await shopModel.findOne({ email }).lean();
@@ -43,10 +80,7 @@ class AccessService {
         }
 
         if (newShop) {
-
-            const publicKey = crypto.randomBytes(64).toString('hex');
-            const privateKey = crypto.randomBytes(64).toString('hex');
-
+            const { publicKey, privateKey } = generateKeyPair();
             const keyStore = await KeyTokenService.createKeyToken({
                 userId: newShop._id,
                 publicKey,

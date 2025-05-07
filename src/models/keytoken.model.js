@@ -19,11 +19,14 @@ const keyTokenSchema = new Schema(
             type: String,
             required: true
         },
-        //detect who use token
-        refreshToken: {
+        refreshTokensUsed: {
             type: [String],
             default: []
-        }
+        },
+        refreshToken: {
+            type: String,
+            required: true
+        },
     },
     {
         timestamps: true,
