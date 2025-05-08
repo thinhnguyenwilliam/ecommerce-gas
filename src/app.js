@@ -7,6 +7,7 @@ const cors = require('cors');
 const routes = require('./routes');
 const fs = require('fs');
 const path = require('path');
+const requestLogger = require('./middleware/logger');
 
 // Init middleware
 app.use(express.json()); // Example middleware
@@ -46,6 +47,8 @@ app.use(compression({
 // Init DB
 require('./dbs/init.mongodb');
 
+// Use logging middleware
+app.use(requestLogger);
 
 // Init routes
 app.use('/', routes);

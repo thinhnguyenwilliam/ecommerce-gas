@@ -1,0 +1,9 @@
+info: Server running on http://localhost:3055 {"timestamp":"2025-05-08T04:10:54.210Z"}
+info: Server running on http://localhost:3055 {"timestamp":"2025-05-08T04:11:13.831Z"}
+info: Server running on http://localhost:3055 {"timestamp":"2025-05-08T04:12:14.935Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T04:12:31.200Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T04:13:59.644Z"}
+info: Home route hit {"timestamp":"2025-05-08T04:13:59.670Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T04:14:01.703Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T04:14:08.668Z"}
+info: Home route hit {"timestamp":"2025-05-08T04:14:08.688Z"}

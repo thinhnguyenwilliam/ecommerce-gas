@@ -1,0 +1,109 @@
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T04:17:15.730Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T04:17:16.483Z"}
+info: Home route hit {"timestamp":"2025-05-08T04:17:16.500Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T04:18:20.314Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T04:18:37.480Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T04:25:52.324Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T04:26:00.143Z"}
+info: Home route hit {"timestamp":"2025-05-08T04:26:00.162Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T05:52:50.629Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:05:42.513Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:36:28.934Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:49:39.906Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:50:52.705Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:53:06.929Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:53:09.036Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:53:26.734Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:53:30.362Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T06:53:34.517Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T08:28:31.804Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T08:28:34.048Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T08:28:51.931Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T08:28:55.596Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:26:27.164Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:26:49.054Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:26:56.931Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:27:13.392Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:27:24.252Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:27:37.470Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:28:32.999Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:28:35.128Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:30:56.226Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:40:48.175Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:41:08.708Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:44:00.859Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:44:44.937Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:45:25.266Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T09:48:26.677Z"}
+info: Home route hit {"timestamp":"2025-05-08T09:48:26.705Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:48:28.999Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T09:48:36.711Z"}
+info: Home route hit {"timestamp":"2025-05-08T09:48:36.733Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T09:48:51.277Z"}
+info: Home route hit {"timestamp":"2025-05-08T09:48:51.283Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T09:49:04.840Z"}
+info: Home route hit {"timestamp":"2025-05-08T09:49:04.845Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T09:49:11.281Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:49:43.445Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T09:49:43.595Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:52:35.231Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:53:24.320Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:53:29.614Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T09:53:55.699Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T09:56:02.281Z"}
+info: Home route hit {"timestamp":"2025-05-08T09:56:02.288Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T09:56:15.426Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:58:34.332Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T09:58:37.026Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:58:50.180Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T09:59:45.188Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T09:59:48.675Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T10:00:58.964Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T10:01:02.927Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T10:12:44.858Z"}
+info: Home route hit {"timestamp":"2025-05-08T10:12:44.880Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T10:13:44.726Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T10:13:55.837Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T10:14:12.441Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T10:14:17.836Z"}
+info: Home route hit {"timestamp":"2025-05-08T10:14:17.841Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T10:14:25.867Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T10:15:10.376Z"}
+info: Home route hit {"timestamp":"2025-05-08T10:15:10.380Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T10:16:16.732Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T10:17:01.861Z"}
+info: Home route hit {"timestamp":"2025-05-08T10:17:01.866Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T10:17:22.938Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T10:18:47.341Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T10:18:49.147Z"}
+info: Home route hit {"timestamp":"2025-05-08T10:18:49.165Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T10:19:04.355Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T10:28:33.517Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T10:28:35.501Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T10:46:15.143Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T10:50:15.188Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T10:54:15.200Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:02:15.207Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:11:31.653Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T11:11:38.276Z"}
+info: Home route hit {"timestamp":"2025-05-08T11:11:38.296Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:11:40.365Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T11:11:46.302Z"}
+info: Home route hit {"timestamp":"2025-05-08T11:11:46.321Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T11:11:54.866Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:13:22.791Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-08T11:13:27.460Z"}
+info: Home route hit {"timestamp":"2025-05-08T11:13:27.478Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-08T11:13:34.746Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:20:15.303Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:28:33.631Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:28:35.616Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:46:15.356Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T11:50:15.368Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T12:02:15.442Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T12:14:15.472Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T12:20:15.465Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T12:28:33.739Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T12:28:35.733Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T12:46:15.584Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-08T12:50:15.601Z"}

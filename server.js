@@ -3,6 +3,7 @@ const app = require("./src/app");
 const http = require('http');
 const { Server } = require('socket.io');
 const setupSocket = require('./socket');
+const logger = require('./src/configs/logger');
 
 const PORT = process.env.DEV_APP_PORT || 3056;
 //console.log(` process::`, process.env)
@@ -18,7 +19,8 @@ const io = new Server(server, {
 setupSocket(io);
 
 server.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port hi hi ${PORT}`);
+  logger.info(`Server running on ha ha http://localhost:${PORT}`);
 });
 
 const axios = require("axios");
