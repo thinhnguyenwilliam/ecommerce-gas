@@ -1,5 +1,3 @@
-// docs/user.docs.js
-
 /**
  * @swagger
  * components:

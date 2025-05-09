@@ -123,25 +123,41 @@ class AccessService {
         const foundToken = await KeyTokenService.findByRefreshTokenUsed(refreshToken)
         if (foundToken) {
             const { userId, email } = await verifyJWT(refreshToken, foundToken.privateKey)
-            console.log(userId, email)
+            console.log('[1]-->', userId, email)
             await KeyTokenService.deleteKeyById(userId)
             throw new BadRequestError("Something wrong happened !! Please relogin")
         }
 
-        const holderToken = await KeyTokenService.findByRefreshToken({ refreshToken })
+        const holderToken = await KeyTokenService.findByRefreshToken(refreshToken)
         if (!holderToken)
             throw new AuthFailureError('Shop not register: holderToken')
 
         const { userId, email } = await verifyJWT(refreshToken, holderToken.privateKey)
         console.log('[2]-->', { userId, email })
 
-        const foundShop = await findByEmail(email)
+        const foundShop = await findByEmail({ email })
         if (!foundShop)
             throw new AuthFailureError('Shop not register: foundShop')
 
         const tokens = await createTokensPair({ userId, email }, holderToken.publicKey, holderToken.privateKey)
-        
-    
+        holderToken.refreshToken = tokens.refreshToken; // Replace the old refresh token with the new one
+
+        if (!Array.isArray(holderToken.refreshTokensUsed)) {
+            holderToken.refreshTokensUsed = []; // Ensure it's an array before pushing
+        }
+
+        holderToken.refreshTokensUsed.push(refreshToken); // Add the used token to the history
+        console.log('[3]-->', refreshToken);
+
+        await holderToken.save(); // Persist changes to the database
+
+
+        return {
+            user: {
+                userId, email
+            },
+            tokens
+        }
     }
 
 }

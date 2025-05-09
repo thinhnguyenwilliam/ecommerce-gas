@@ -130,3 +130,98 @@ info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T04:
 info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T04:05:02.638Z"}
 info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T04:09:27.856Z"}
 info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T04:12:13.779Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T04:12:58.867Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T04:25:00.903Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T06:38:49.391Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T06:38:51.763Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T06:42:20.903Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T06:45:08.968Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T06:45:16.439Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T06:47:09.686Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T06:56:04.946Z"}
+info: Home route hit {"timestamp":"2025-05-09T06:56:05.021Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T06:56:07.573Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T06:56:25.753Z"}
+info: Home route hit {"timestamp":"2025-05-09T06:56:25.772Z"}
+info: POST /v1/api/shop/logout {"timestamp":"2025-05-09T06:59:45.766Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:00:02.196Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:00:02.200Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:01:57.013Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:02:59.919Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:03:02.530Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:05:41.007Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:05:41.666Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:05:45.109Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:07:06.951Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:07:06.957Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:07:23.222Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:07:23.227Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:07:56.674Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:08:55.093Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:10:43.293Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:10:47.716Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:12:38.061Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:12:42.961Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:12:43.202Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:12:45.184Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:13:08.746Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:13:12.298Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:14:36.129Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:14:38.707Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:17:40.219Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:17:45.100Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:17:49.947Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:17:49.954Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:17:53.220Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:17:53.225Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:18:19.454Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:21:53.580Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:21:55.924Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:21:55.941Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:22:34.410Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:24:34.030Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:24:37.183Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:25:03.251Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:27:05.349Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:27:29.311Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:27:33.066Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:27:33.071Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:27:54.917Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:28:15.644Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:28:18.988Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:28:27.246Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:28:27.264Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:28:56.082Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:31:15.562Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:31:44.700Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:33:16.856Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:33:43.480Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:33:45.324Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:34:19.465Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:35:04.063Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:35:09.877Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:36:59.853Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:36:59.934Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:37:59.860Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:38:03.388Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:39:09.673Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:40:01.084Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:40:02.622Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:40:06.791Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:40:18.872Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:40:20.202Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:40:21.442Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:40:35.621Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:40:36.596Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:40:38.482Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:41:30.780Z"}
+info: POST /v1/api/shop/login {"timestamp":"2025-05-09T07:41:33.013Z"}
+info: Home route hit {"timestamp":"2025-05-09T07:41:33.031Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:41:56.578Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:42:06.652Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:42:21.995Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:42:38.257Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:42:49.557Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:42:53.062Z"}
+info: Server running on ha ha http://localhost:3055 {"timestamp":"2025-05-09T07:43:05.851Z"}
+info: POST /v1/api/shop/handlerRefreshToken {"timestamp":"2025-05-09T07:43:08.553Z"}
