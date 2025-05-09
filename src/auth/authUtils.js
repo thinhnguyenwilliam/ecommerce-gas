@@ -5,9 +5,9 @@ const { asyncHandler } = require('../helpers/asyncHandler');
 const { findByUserId } = require('../service/keyToken.service');
 
 const HEADER = {
-    API_KEY: 'x-api-key',
-    AUTHORIZATION: 'authorization',
-    CLIENT_ID: 'x-client-id',
+    API_KEY: 'x-api-key', // key mình cấp cho client sử dụng khi gọi request
+    AUTHORIZATION: 'authorization', // accesToken
+    CLIENT_ID: 'x-client-id', // userId
 };
 
 const createTokensPair = async (payload, publicKey, privateKey) => {
@@ -39,7 +39,7 @@ const createTokensPair = async (payload, publicKey, privateKey) => {
 };
 
 
-const authentication=asyncHandler(async (req, res, next) => {
+const authentication = asyncHandler(async (req, res, next) => {
     const userId = req.headers[HEADER.CLIENT_ID];
     if (!userId) {
         throw new AuthFailureError('Invalid Request userId = req.headers[HEADER.CLIENT_ID] is missing');
@@ -57,7 +57,7 @@ const authentication=asyncHandler(async (req, res, next) => {
 
     try {
         const decodedUser = JWT.verify(accessToken, keyStore.publicKey);
-        if(userId !== decodedUser.userId) {
+        if (userId !== decodedUser.userId) {
             throw new AuthFailureError('Invalid Request userId !== decodedUser.userId');
         }
         req.keyStore = keyStore;
@@ -68,8 +68,12 @@ const authentication=asyncHandler(async (req, res, next) => {
     }
 })
 
+const verifyJWT = async (token, keySecret) => {
+    return JWT.verify(token, keySecret)
+}
 
 module.exports = {
     createTokensPair,
-    authentication
+    authentication,
+    verifyJWT
 };

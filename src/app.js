@@ -8,6 +8,8 @@ const routes = require('./routes');
 const fs = require('fs');
 const path = require('path');
 const requestLogger = require('./middleware/logger');
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('../swagger');
 
 // Init middleware
 app.use(express.json()); // Example middleware
@@ -23,6 +25,7 @@ app.use(cors({
     credentials: true
 }));
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use(helmet());
 // app.use(helmet({
